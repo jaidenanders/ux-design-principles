@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Styles | Graphic Designer & Brand Identity Specialist</title>
+  <meta name="description" content="Portfolio of Alex Styles: visual designer specializing in brand identity, editorial craft, and bespoke digital experiences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Global Announcement / Availability Pill -->
+  <div class="availability-bar">
+    <div class="container availability-inner">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span>Available for select client projects & creative direction — Q4</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="Alex Styles Homepage">Alex Styles<span>.</span></a>
+
+      <!-- Mobile Navigation Hamburger Toggle -->
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <nav class="site-nav" id="primaryNav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="tooltip-wrapper">
+            <a href="#about" class="nav-link" aria-describedby="tip-about">About</a>
+            <span role="tooltip" id="tip-about" class="tooltip">Background & craft</span>
+          </li>
+          <li class="tooltip-wrapper">
+            <a href="#portfolio" class="nav-link" aria-describedby="tip-work">Portfolio</a>
+            <span role="tooltip" id="tip-work" class="tooltip">Case studies</span>
+          </li>
+          <li class="tooltip-wrapper">
+            <a href="#contact" class="nav-link btn btn-secondary nav-btn" aria-describedby="tip-contact">Get in Touch</a>
+            <span role="tooltip" id="tip-contact" class="tooltip">Book an inquiry</span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-content">
+        <div class="badge-pill">
+          <span class="badge-accent"></span>
+          <span>Independent Brand & Visual Designer</span>
+        </div>
+        <h1 class="hero-title">Crafting distinct visual identities that tell unforgettable stories.</h1>
+        <p class="hero-intro">
+          Transforming ambiguous concepts into systematic design solutions across physical packaging, typography, and web surfaces.
+        </p>
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn btn-primary btn-shine">View Selected Works</a>
+          <a href="#contact" class="btn btn-outline">Let's Collaborate</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section about-section">
+      <div class="container about-grid">
+        <div class="about-lead">
+          <span class="eyebrow">The Perspective</span>
+          <h2 class="section-title">Design rooted in typography, hierarchy, and purpose.</h2>
+          <p class="lead-text">
+            I’m Alex, an independent graphic designer with 6+ years partnering with cultural institutions, emerging ventures, and boutique retail brands.
+          </p>
+        </div>
+        <div class="about-details">
+          <p>
+            My methodology rejects generic minimalism in favor of expressive visual narrative. Every project begins with rigorous typographic research, bespoke palette engineering, and materials exploration to ensure longevity.
+          </p>
+          <div class="skills-block">
+            <h3 class="skills-heading">Specializations</h3>
+            <div class="skills-pill-group">
+              <span class="skill-tag">Brand Identity Systems</span>
+              <span class="skill-tag">Custom Typography</span>
+              <span class="skill-tag">Editorial & Book Design</span>
+              <span class="skill-tag">Sustainable Packaging</span>
+              <span class="skill-tag">Design Systems</span>
+              <span class="skill-tag">Art Direction</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section with Interactive Modals -->
+    <section id="portfolio" class="section portfolio-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Archive</span>
+          <h2 class="section-title">Selected Works</h2>
+          <p class="section-subtitle">Click any project to view comprehensive design specifications and deliverables.</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- Card 1 -->
+          <article class="portfolio-card"
+            data-title="Lumina Botanical Skincare"
+            data-category="Identity & Packaging (2025)"
+            data-deliverables="Visual Identity, Custom Glassware Silkscreen, Outer Packaging System, Brand Guidelines"
+            data-description="Lumina required an eco-conscious luxury rebrand communicating cold-pressed, sustainable botanical science. We engineered custom debossed uncoated cartons paired with metallic copper foil blocking, supported by an organic display serif typeface lockup."
+            data-gradient="gradient-1">
+            <div class="card-media">
+              <div class="card-media-placeholder gradient-1" aria-hidden="true"></div>
+              <span class="card-media-hint">View Case Study</span>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Identity & Packaging</span>
+              <h3 class="card-title">Lumina Botanical Skincare</h3>
+              <p class="card-desc">Minimalist organic skincare identity and sustainable foil packaging system.</p>
+              <button type="button" class="btn-card-action" aria-label="Open case study for Lumina Botanical Skincare">
+                <span>Explore Project</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="portfolio-card"
+            data-title="Kinesis Motion Monograph"
+            data-category="Editorial & Publication (2025)"
+            data-deliverables="Hardcover Monograph, Typographic Grid System, Japanese Binding, Exhibition Poster"
+            data-description="A limited edition 120-page retrospective celebrating dynamic kinetic typography. Features a strict 12-column Swiss grid interrupted by rhythmic, distorted type specimens printed with duotone black and spot-neon pantone inks."
+            data-gradient="gradient-2">
+            <div class="card-media">
+              <div class="card-media-placeholder gradient-2" aria-hidden="true"></div>
+              <span class="card-media-hint">View Case Study</span>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Editorial & Print</span>
+              <h3 class="card-title">Kinesis Motion Monograph</h3>
+              <p class="card-desc">Limited edition 120-page hardcover publication focusing on kinetic art.</p>
+              <button type="button" class="btn-card-action" aria-label="Open case study for Kinesis Motion Monograph">
+                <span>Explore Project</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="portfolio-card"
+            data-title="Vektor Architecture Studio"
+            data-category="Digital Experience & UI (2026)"
+            data-deliverables="Design System, Web Interface, Spatial Typography, WebGL Showcase Direction"
+            data-description="Vektor's architectural portfolio translates physical concrete brutality into responsive web space. Built around high-contrast typography, structural borders, and immersive interactive blueprint overlays."
+            data-gradient="gradient-3">
+            <div class="card-media">
+              <div class="card-media-placeholder gradient-3" aria-hidden="true"></div>
+              <span class="card-media-hint">View Case Study</span>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Digital Experience</span>
+              <h3 class="card-title">Vektor Architecture Studio</h3>
+              <p class="card-desc">Interactive portfolio interface, architectural typography, and grid layout.</p>
+              <button type="button" class="btn-card-action" aria-label="Open case study for Vektor Architecture Studio">
+                <span>Explore Project</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="portfolio-card"
+            data-title="Solstice Craft Roasters"
+            data-category="Packaging & Retail (2026)"
+            data-deliverables="Variable Label Architecture, Custom Woodblock Type, Stamp Kit, Retail Merchandising"
+            data-description="An artisanal small-batch coffee brand featuring a modular color-coded label system that scales easily across rotating origin beans, roast dates, and tasting notes without losing typographic distinction."
+            data-gradient="gradient-4">
+            <div class="card-media">
+              <div class="card-media-placeholder gradient-4" aria-hidden="true"></div>
+              <span class="card-media-hint">View Case Study</span>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Packaging Design</span>
+              <h3 class="card-title">Solstice Craft Roasters</h3>
+              <p class="card-desc">Custom type lockup, variable label system, and retail coffee merchandise.</p>
+              <button type="button" class="btn-card-action" aria-label="Open case study for Solstice Craft Roasters">
+                <span>Explore Project</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container contact-container">
+        <div class="contact-header">
+          <span class="eyebrow">Get in Touch</span>
+          <h2 class="section-title">Start a Project</h2>
+          <p class="section-subtitle">Have an upcoming branding, editorial, or creative direction commission? Tell me about your goals below.</p>
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Jordan Rivera" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="e.g. jordan@studio.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="project-type" class="form-label">Project Scope</label>
+            <select id="project-type" name="project_type" class="form-select">
+              <option value="branding">Brand Identity System</option>
+              <option value="editorial">Publication & Editorial Design</option>
+              <option value="packaging">Packaging & Retail Experience</option>
+              <option value="digital">Digital Surface / UI Direction</option>
+              <option value="other">General Creative Collaboration</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Project Details & Timeline</label>
+            <textarea id="message" name="message" rows="5" class="form-textarea" placeholder="Provide background on deliverables, intended start date, and approximate timeline..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit btn-shine">Send Project Inquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Alex Styles. Designed with intentional typography.</p>
+      <div class="footer-links">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://behance.net" target="_blank" rel="noopener noreferrer">Behance</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Detail Modal Dialog -->
+  <dialog id="projectModal" class="project-modal" aria-labelledby="modalTitle">
+    <div class="modal-surface">
+      <button type="button" class="modal-close" id="modalClose" aria-label="Close dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div id="modalHeroMedia" class="modal-media-banner" aria-hidden="true"></div>
+
+      <div class="modal-content">
+        <span id="modalCategory" class="modal-badge">Category</span>
+        <h2 id="modalTitle" class="modal-title">Project Title</h2>
+
+        <div class="modal-meta-box">
+          <span class="meta-label">Deliverables</span>
+          <p id="modalDeliverables" class="meta-text">Item 1, Item 2</p>
+        </div>
+
+        <div class="modal-body-copy">
+          <h3 class="meta-label">Design Execution & Overview</h3>
+          <p id="modalDescription">Detailed project brief and outcome information.</p>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="btn btn-secondary" id="modalDismissBtn">Back to Projects</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Interactive Logic: Navigation Drawer & Modal Dialog -->
+  <script>
+    // 1. Mobile Navigation Drawer
+    const navToggle = document.getElementById('navToggle');
+    const primaryNav = document.getElementById('primaryNav');
+
+    navToggle.addEventListener('click', () => {
+      const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', !isExpanded);
+      primaryNav.classList.toggle('nav-open');
+    });
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        primaryNav.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // 2. Project Modal Controller
+    const modal = document.getElementById('projectModal');
+    const modalClose = document.getElementById('modalClose');
+    const modalDismissBtn = document.getElementById('modalDismissBtn');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalCategory = document.getElementById('modalCategory');
+    const modalDeliverables = document.getElementById('modalDeliverables');
+    const modalDescription = document.getElementById('modalDescription');
+    const modalHeroMedia = document.getElementById('modalHeroMedia');
+    let triggerElement = null;
+
+    function openProjectModal(card) {
+      triggerElement = document.activeElement;
+      modalTitle.textContent = card.dataset.title;
+      modalCategory.textContent = card.dataset.category;
+      modalDeliverables.textContent = card.dataset.deliverables;
+      modalDescription.textContent = card.dataset.description;
+
+      // Update modal banner gradient class
+      modalHeroMedia.className = 'modal-media-banner ' + card.dataset.gradient;
+
+      modal.showModal();
+      document.body.classList.add('modal-open');
+    }
+
+    function closeProjectModal() {
+      modal.close();
+      document.body.classList.remove('modal-open');
+      if (triggerElement) triggerElement.focus();
+    }
+
+    document.querySelectorAll('.portfolio-card').forEach(card => {
+      card.addEventListener('click', (e) => {
+        openProjectModal(card);
+      });
+      // Allow Enter/Space on cards for keyboard users
+      card.setAttribute('tabindex', '0');
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openProjectModal(card);
+        }
+      });
+    });
+
+    modalClose.addEventListener('click', closeProjectModal);
+    modalDismissBtn.addEventListener('click', closeProjectModal);
+
+    // Close when clicking native dialog backdrop
+    modal.addEventListener('click', (e) => {
+      const rect = modal.getBoundingClientRect();
+      const isInDialog = (rect.top <= e.clientY && e.clientY <= rect.top + rect.height
+        && rect.left <= e.clientX && e.clientX <= rect.left + rect.width);
+      if (!isInDialog) {
+        closeProjectModal();
+      }
+    });
+
+    // Close on Escape syncs body class
+    modal.addEventListener('cancel', () => {
+      document.body.classList.remove('modal-open');
+    });
+  </script>
+</body>
+</html>
